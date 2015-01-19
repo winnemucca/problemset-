@@ -18,6 +18,20 @@ var wordCount = function(word) {
 }
 console.log(wordCount('hot dog'));
 
+function primeTime(num) {
+    if(num < 2) {
+    	return false;
+    }
+    for (var i = 2; i < num; i++) {
+        if(num%i==0)
+            return false;
+    }
+    return true;
+}
+console.log(primeTime(8));
+console.log(primeTime(7));
+
+
 // var wordCount = function(string) {
 // 	var seperate = string.split('');
 // 	return seperate.length;
